@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/870c30ac6e.js" crossorigin="anonymous"></script>
+        
+
+    <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
+    <title>Grupo Fono Bus</title>
+    
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/PracticoGrupo9/static/css/crud-abono.css">
+    <link rel="stylesheet" href="/PracticoGrupo9/static/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
+    <title>Grupo Fono Bus</title>
+    
+    
+    
+
+    <script type="text/javascript" src="/static/js/inicio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/static/js/crud-abono-fetch.js"></script>   
+
+</head>
+<body>
+    <header class="header">
+        <!-- <div class="navbar"></div> -->
+        <nav>
+            <!-- logo -->
+            <div id="logo">
+                <a href="/">
+
+                    <img src="/static/img/logo-fonobus-1.png" alt="Fono Bus">
+
+                    
+                </a>
+            </div>
+        
+            <!-- Hipervinculos para el menu -->
+            <ul class="nav-links">
+              
+                <li>
+
+
+                    <a href="/templates/acerca.html">
+
+                        <i class="fa-solid fa-user"></i>
+                        <span>Nosotros</span>
+                    </a>
+                </li>
+                <li>
+
+                    
+
+                    <a href="/templates/pasajes.html">
+
+                        <i class="fa-solid fa-bus"></i>
+                        <span>Pasajes</span>
+                    </a>
+                </li>
+                <li>
+                    
+                   <a href="/templates/contacto.html">
+
+                        <i class="fa fa-fw fa-envelope"></i>
+                        <span>Contacto</span>
+                    </a>
+                </li>
+                <li>
+
+                    <a href="/templates/crud-abono.html">
+                        <i class="fa-solid fa-address-card"></i>
+                        <span>Abono</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mainContacto">
+        <div class="wrap">
+            <form id="contactForm">
+                <div class="form-header">
+                    <h2>Contacto</h2>
+                </div>
+                <div class="form-body">
+                    <fieldset>
+                        <legend><i class="fa fa-user"></i> Informacion Personal</legend>
+                        
+                        <label for="title">Nombre</label>
+                        <input type="text" class="input-search" name="title" id="title">
+                    
+                        <label for="director">Direccion</label>
+                        <input type="text" class="input-search" name="director" id="director">
+                        
+                        <label for="release-date">Fecha Nacimiento</label>
+                        <input type="date" class="input-search" name="release_date" id="release-date">
+
+                        <label for="banner">Foto Carnet</label>
+                        <input type="url" class="input-search" name="banner" id="banner-form">
+                        
+        
+                    </fieldset>
+    
+                </div>
+                <div class="form-footer">
+                    <input type="hidden"  name="id" id="id-movie">
+                    <button class="btn-cac" type="button" id="btn-save-movie">Agregar</button>                
+                </div>
+            </form>
+        </div>
+
+        <section>
+            <div class="form-header">
+                <h2>Listado de abonados</h2>
+            </div>
+            
+        <section id="list" class="container">
+           
+            
+            <table id="list-table-movies" class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Direccion</th>
+                        <th>Fecha de Nacimiento</th>
+                        <th>Foto Carnet</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-table-movies">
+                    
+                </tbody>
+            </table>
+        </section>  
+    </section>
+
+    </main>
+
+
+<footer class="estiloFooter">
+    <div class="localizacion">
+        <div class="direccionTelefono">
+            <p>Pte. Gral. Juan Domingo Peron 380 - Cordoba</p>
+            <p>Tel: 0810 - 888 - 3666</p>
+        </div>
+        <iframe width="50%" height="auto" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=Bv.%20Pero%20380%20Cordoba+(Fono%20Bus)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps tracker sport</a></iframe>
+    </div>
+    <div class="contenedorRedes">
+        <h2>Seguinos en:</h2>
+        <div class="contenedorEnlacesRedes">
+            <a href="https://www.facebook.com/GrupoFonoBus/?locale=es_LA">
+                <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
+            </a>
+            <a href="https://www.instagram.com/grupo_fono_bus/?hl=es">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            </a>
+            <a href="https://www.youtube.com/@grupofonobus9955">
+                <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

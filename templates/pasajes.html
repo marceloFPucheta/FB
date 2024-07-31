@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/870c30ac6e.js" crossorigin="anonymous"></script>
+        
+    <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
+    <title>Grupo Fono Bus</title>
+    
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/crud-movies.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="/static/js/inicio.js"></script>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header class="header">
+
+        <nav class="navbar navbar-expand-md navbar-white bg-white" aria-label="Fourth navbar example">
+            <div class="container-fluid">
+    
+                <div id="logo">
+                    
+                </div>
+                <a class="navbar-brand" href="/">
+                <img src="/static/img/logo-fonobus-1.png" alt="Fono Bus">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./templates/acerca.html">
+                        <i class="fa-solid fa-user"></i>Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="/templates/pasajes.html">
+                        <i class="fa-solid fa-bus"></i>Pasajes</a>
+                    </li>
+            
+                    <li class="nav-item">
+                        <a class="nav-link" href="/templates/contacto.html">
+                            <i class="fa fa-fw fa-envelope"></i>Contacto</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/templates/crud-abono.html">
+                            <i class="fa-solid fa-address-card"></i>Abono</a>
+                    </li>
+    
+                   <!-- <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./templates/acerca.html">
+                            <i class="fa-solid fa-user"></i>Nosotros</a>
+                        </li>                                         
+                        <li><a class="dropdown-item" href="./templates/pasajes.html">
+                            <i class="fa-solid fa-bus"></i>Pasajes</a>
+                        </li>
+                        <li><a class="dropdown-item" href="./templates/contacto.html">
+                            <i class="fa fa-fw fa-envelope"></i>Contacto</a>
+                        </li>
+                        <li><a class="dropdown-item" href="./templates/crud-abono.html">
+                            <i class="fa-solid fa-address-card"></i>Abono</a>
+                        </li>                  
+                    </ul>
+                    </li>
+                </ul>
+                <form role="search">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                </div>
+            </div>
+            </nav>
+    
+        </header>
+
+
+    <main class="contenedorMainPasajes">
+        <div class="contenedorPasajes">
+            <h1>Elegi tu destino</h1>
+        <div class="buscadorPasajes">
+            <div class="contenedorBuscar">
+                <input id="pasajeABuscar" type="text" class="estiloInput" size="40" maxlength="40">
+                <button type="button" onclick="buscarPasaje()" class="estiloBoton">BUSCAR</button>
+            </div>
+        </div>
+        <div>
+            <table class="tablaPasajes">
+                    <thead class="">
+                        <tr class="">
+                            <th class="">#</th>
+                            <th class="">Destino</th>
+                            <th class="">Salida</th>
+                            <th class="">Tipo viaje</th>
+                            <th class="">Pasajeros</th>
+                        </tr>
+                    </thead>
+                    <tbody class="" id="tablaPasajesCuerpo">
+                        
+                    </tbody>
+                </table>
+        </div>
+        <div class="contenedorBotonComprar">
+            <button type="button" onclick="comprarPasaje()" class="estiloBoton">COMPRAR</button>
+        </div>
+        </div>
+    </main> 
+    <footer class="estiloFooter">
+    <div class="localizacion">
+        <div class="direccionTelefono">
+            <p>Pte. Gral. Juan Domingo Peron 380 - Cordoba</p>
+            <p>Tel: 0810 - 888 - 3666</p>
+        </div>
+        <iframe width="50%" height="auto" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=Bv.%20Pero%20380%20Cordoba+(Fono%20Bus)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps tracker sport</a></iframe>
+    </div>
+    <div class="contenedorRedes">
+        <h2>Seguinos en:</h2>
+        <div class="contenedorEnlacesRedes">
+            <a href="https://www.facebook.com/GrupoFonoBus/?locale=es_LA">
+                <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
+            </a>
+            <a href="https://www.instagram.com/grupo_fono_bus/?hl=es">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            </a>
+            <a href="https://www.youtube.com/@grupofonobus9955">
+                <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
