@@ -10,17 +10,6 @@ class Abono{
 
 }
 
-// const movie1 = new Movie(1,'Damsel','Un director',4.5,'2024-03-01','https://image.tmdb.org/t/p/w500//sMp34cNKjIb18UBOCoAv4DpCxwY.jpg');
-
-// const movie2 = new Movie(2,'Dune 2','Un director 2',5,'2024-04-01','https://image.tmdb.org/t/p/w500//8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg');
-
-// const movie3 = new Movie(3,'Kunfu panda 4','Un director 2',5,'2024-04-01','https://image.tmdb.org/t/p/w500//kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg');
-
-// let movies = [movie1,movie2,movie3];
-
-// localStorage.setItem('movies',JSON.stringify(movies));
-
-// console.log(movies);
 
 function showAbonos(){
     
